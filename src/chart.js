@@ -5,29 +5,32 @@ let chart;
 
 const DEFAULT_SETTINGS = {
   STROKE_ONLY: false,
-  SYMBOL_SCALE: 1,
+  SYMBOL_SCALE: 0.8,
   POINTS_TEXT_SIZE: 9,
   MARGIN: 40,
   SHIFT_IN_DEGREES: 180,
+  INDOOR_CIRCLE_RADIUS_RATIO: 1.4,
+  INNER_CIRCLE_RADIUS_RATIO: 8,
+  RULER_RADIUS: 4,
   COLOR_BACKGROUND: "#FFFFFF",
-  POINTS_COLOR: "#263238",
-  SIGNS_COLOR: "#263238",
-  CIRCLE_COLOR: "#90A4AE",
-  LINE_COLOR: "#90A4AE",
-  CUSPS_FONT_COLOR: "#90A4AE",
-  SYMBOL_AXIS_FONT_COLOR: "#90A4AE",
-  COLOR_ARIES: "#EF5350",
-  COLOR_TAURUS: "#66BB6A",
-  COLOR_GEMINI: "#FFEE58",
-  COLOR_CANCER: "#42A5F5",
-  COLOR_LEO: "#EF5350",
-  COLOR_VIRGO: "#66BB6A",
-  COLOR_LIBRA: "#FFEE58",
-  COLOR_SCORPIO: "#42A5F5",
-  COLOR_SAGITTARIUS: "#EF5350",
-  COLOR_CAPRICORN: "#66BB6A",
-  COLOR_AQUARIUS: "#FFEE58",
-  COLOR_PISCES: "#42A5F5",
+  POINTS_COLOR: "#020202",
+  SIGNS_COLOR: "#D5D5D5",
+  CIRCLE_COLOR: "#434343",
+  LINE_COLOR: "#131313",
+  CUSPS_FONT_COLOR: "#020202",
+  SYMBOL_AXIS_FONT_COLOR: "#020202",
+  COLOR_ARIES: "#020202",
+  COLOR_TAURUS: "#020202",
+  COLOR_GEMINI: "#020202",
+  COLOR_CANCER: "#020202",
+  COLOR_LEO: "#020202",
+  COLOR_VIRGO: "#020202",
+  COLOR_LIBRA: "#020202",
+  COLOR_SCORPIO: "#020202",
+  COLOR_SAGITTARIUS: "#020202",
+  COLOR_CAPRICORN: "#020202",
+  COLOR_AQUARIUS: "#020202",
+  COLOR_PISCES: "#020202",
   RADIX_ASPECTS_SETTINGS: {
     orbits: {
       ...generateOrbsFor(['As','H2','H3','Ic','H5','H6','Ds','H8','H9','Mc','H11','H12'], 1),
@@ -87,10 +90,10 @@ function getAspectsSettings(settings) {
     };
   return {
     conjunction: { degree: 0, orbit: orbs.conjunction, color: '#ff9800' },
-    sextile: { degree: 60, orbit: orbs.sextile, color: '#4caf50' },
-    square: { degree: 90, orbit: orbs.square, color: '#f44336' },
-    trine: { degree: 120, orbit: orbs.trine, color: '#2196f3' },
-    opposition: { degree: 180, orbit: orbs.opposition, color: '#795548' }
+    sextile: { degree: 60, orbit: orbs.sextile, color: '#4C7563' },
+    square: { degree: 90, orbit: orbs.square, color: '#C04D40' },
+    trine: { degree: 120, orbit: orbs.trine, color: '#3B6681' },
+    opposition: { degree: 180, orbit: orbs.opposition, color: '#E28D48' }
   };
 }
 
